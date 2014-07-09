@@ -1174,12 +1174,12 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <packages>
 <package name="SO14">
 <description>&lt;b&gt;Small Outline package&lt;/b&gt; 150 mil</description>
-<wire x1="4.064" y1="1.9558" x2="-4.064" y2="1.9558" width="0.1524" layer="21"/>
-<wire x1="4.064" y1="-1.9558" x2="4.445" y2="-1.5748" width="0.1524" layer="21" curve="90"/>
-<wire x1="-4.445" y1="1.5748" x2="-4.064" y2="1.9558" width="0.1524" layer="21" curve="-90"/>
-<wire x1="4.064" y1="1.9558" x2="4.445" y2="1.5748" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-4.445" y1="-1.5748" x2="-4.064" y2="-1.9558" width="0.1524" layer="21" curve="90"/>
-<wire x1="-4.064" y1="-1.9558" x2="4.064" y2="-1.9558" width="0.1524" layer="21"/>
+<wire x1="4.064" y1="1.8542" x2="-4.064" y2="1.8542" width="0.1524" layer="21"/>
+<wire x1="4.064" y1="-1.8542" x2="4.445" y2="-1.5748" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.445" y1="1.5748" x2="-4.064" y2="1.8542" width="0.1524" layer="21" curve="-90"/>
+<wire x1="4.064" y1="1.8542" x2="4.445" y2="1.5748" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-4.445" y1="-1.5748" x2="-4.064" y2="-1.8542" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.064" y1="-1.8542" x2="4.064" y2="-1.8542" width="0.1524" layer="21"/>
 <wire x1="4.445" y1="-1.5748" x2="4.445" y2="1.5748" width="0.1524" layer="21"/>
 <wire x1="-4.445" y1="1.5748" x2="-4.445" y2="0.508" width="0.1524" layer="21"/>
 <wire x1="-4.445" y1="0.508" x2="-4.445" y2="-0.508" width="0.1524" layer="21"/>
@@ -1465,7 +1465,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="2.2225" y="8.255" size="0.889" layer="27" ratio="15"/>
 </element>
 <element name="ANT1" library="adafruit" package="RN-ANT" value="ANTENNA" x="7.3025" y="10.239375" smashed="yes"/>
-<element name="IC1" library="freetronics-angus" package="SO14" value="74HC4050D" x="24.003" y="31.369" smashed="yes" rot="R90">
+<element name="IC1" library="freetronics-angus" package="SO14" value="MC74VHCT50A" x="24.003" y="31.369" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="16-SOIC" x="24.003" y="31.369" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="20.574" y="36.449" size="0.889" layer="27" ratio="15"/>
 <attribute name="NAME" x="23.08225" y="35.08375" size="0.889" layer="25" ratio="15"/>
@@ -2810,8 +2810,8 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,072fd123f2524420"/>
 <approved hash="5,1,d1b0d4a7b0e98158"/>
 <approved hash="3,1,9c59bcfa7cfa5c59"/>
-<approved hash="19,1,2c4c44ee0d75b0bf"/>
 <approved hash="19,1,bc39036d3dd5024a"/>
+<approved hash="19,1,2c4c44ee0d75b0bf"/>
 <approved hash="19,1,87c34dcf8dcc742e"/>
 <approved hash="5,1,446e5c97de22e9b6"/>
 <approved hash="5,1,b70460ec50fa857a"/>

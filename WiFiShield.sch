@@ -4768,12 +4768,12 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <packages>
 <package name="SO14">
 <description>&lt;b&gt;Small Outline package&lt;/b&gt; 150 mil</description>
-<wire x1="4.064" y1="1.9558" x2="-4.064" y2="1.9558" width="0.1524" layer="21"/>
-<wire x1="4.064" y1="-1.9558" x2="4.445" y2="-1.5748" width="0.1524" layer="21" curve="90"/>
-<wire x1="-4.445" y1="1.5748" x2="-4.064" y2="1.9558" width="0.1524" layer="21" curve="-90"/>
-<wire x1="4.064" y1="1.9558" x2="4.445" y2="1.5748" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-4.445" y1="-1.5748" x2="-4.064" y2="-1.9558" width="0.1524" layer="21" curve="90"/>
-<wire x1="-4.064" y1="-1.9558" x2="4.064" y2="-1.9558" width="0.1524" layer="21"/>
+<wire x1="4.064" y1="1.8542" x2="-4.064" y2="1.8542" width="0.1524" layer="21"/>
+<wire x1="4.064" y1="-1.8542" x2="4.445" y2="-1.5748" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.445" y1="1.5748" x2="-4.064" y2="1.8542" width="0.1524" layer="21" curve="-90"/>
+<wire x1="4.064" y1="1.8542" x2="4.445" y2="1.5748" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-4.445" y1="-1.5748" x2="-4.064" y2="-1.8542" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.064" y1="-1.8542" x2="4.064" y2="-1.8542" width="0.1524" layer="21"/>
 <wire x1="4.445" y1="-1.5748" x2="4.445" y2="1.5748" width="0.1524" layer="21"/>
 <wire x1="-4.445" y1="1.5748" x2="-4.445" y2="0.508" width="0.1524" layer="21"/>
 <wire x1="-4.445" y1="0.508" x2="-4.445" y2="-0.508" width="0.1524" layer="21"/>
@@ -4942,7 +4942,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </part>
 <part name="ANT1" library="adafruit" deviceset="ANTENNA" device=""/>
 <part name="U$2" library="freetronics-luke" deviceset="GND" device=""/>
-<part name="IC1" library="freetronics-angus" deviceset="MC74VHCT50A" device="" value="74HC4050D">
+<part name="IC1" library="freetronics-angus" deviceset="MC74VHCT50A" device="" value="MC74VHCT50A">
 <attribute name="PACKAGE" value="16-SOIC"/>
 </part>
 <part name="U$3" library="freetronics-luke" deviceset="GND" device=""/>
@@ -6124,10 +6124,17 @@ header for R3 compatibility.</text>
 <approved hash="102,1,228.6,162.56,+5V,+5V-2,,,,"/>
 <approved hash="201,1,228.6,162.56,+5V,+5V\, +5V-2,,,,"/>
 <approved hash="201,1,99.06,27.94,+5V,+5V\, +5V-2,,,,"/>
+<approved hash="104,1,127,124.46,IC1P,VCC,+3V3,,,"/>
 <approved hash="104,1,205.74,127,J8,VIN,N$75,,,"/>
 <approved hash="104,1,205.74,116.84,J8,+3V3,N$77,,,"/>
 <approved hash="103,1,205.74,109.22,J8,RESERVED,N$74,,,"/>
 <approved hash="104,1,40.64,165.1,IC2P,VCC,+3V3,,,"/>
+<approved hash="113,1,231.623,119.109,J12,,,,,"/>
+<approved hash="113,1,231.623,144.509,J11,,,,,"/>
+<approved hash="113,1,146.685,152.129,J6,,,,,"/>
+<approved hash="113,1,146.685,124.189,J7,,,,,"/>
+<approved hash="113,1,146.685,103.869,J5,,,,,"/>
+<approved hash="113,1,130.023,150.859,J4,,,,,"/>
 </errors>
 </schematic>
 </drawing>
