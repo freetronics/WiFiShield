@@ -499,24 +499,6 @@
 <wire x1="-8.89" y1="-23.495" x2="-8.89" y2="-24.765" width="0.2032" layer="21"/>
 <text x="6.58235" y="-22.63775" size="0.8128" layer="21" font="vector" ratio="15">GND</text>
 </package>
-<package name="SJ">
-<wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.397" y2="-1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.397" y1="-1.016" x2="1.651" y2="-0.762" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.651" y1="-0.762" x2="1.651" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-1.397" y1="1.016" x2="1.397" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="0" x2="1.524" y2="0" width="0.1524" layer="51"/>
-<wire x1="-1.016" y1="0" x2="-1.524" y2="0" width="0.1524" layer="51"/>
-<wire x1="-0.254" y1="-0.127" x2="-0.254" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
-</package>
 </packages>
 <symbols>
 <symbol name="GND">
@@ -625,16 +607,6 @@ Shield Footprint</text>
 <pin name="SCK" x="17.78" y="25.4" visible="pin" length="short" rot="R180"/>
 <pin name="+5V@0" x="17.78" y="27.94" visible="pin" length="short" rot="R180"/>
 <pin name="MISO" x="17.78" y="30.48" visible="pin" length="short" rot="R180"/>
-</symbol>
-<symbol name="SJ">
-<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -774,24 +746,6 @@ Shield Footprint</text>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SJ" prefix="J">
-<description>PCB "solder jumper".
-Note that there should nothing on the BOM corresponding to this "component".</description>
-<gates>
-<gate name="G$1" symbol="SJ" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SJ">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2133,34 +2087,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="-1.27" y="2.54" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.27" y="1.27" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
-<package name="TO92-STRAIGHT">
-<wire x1="-2.0946" y1="-1.651" x2="-1.651" y2="2.0946" width="0.2032" layer="21" curve="-90" cap="flat"/>
-<wire x1="-1.651" y1="2.0946" x2="-0.7863" y2="2.5485" width="0.2032" layer="21" curve="-21.099059" cap="flat"/>
-<wire x1="0.7863" y1="2.5484" x2="2.0945" y2="-1.651" width="0.2032" layer="21" curve="-111.09954" cap="flat"/>
-<wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.2032" layer="21"/>
-<wire x1="-1.651" y1="2.0946" x2="2.5485" y2="0.7863" width="0.2032" layer="21" curve="-111.098957" cap="flat"/>
-<wire x1="-1.9945" y1="-1.451" x2="-1.6055" y2="-1.451" width="0.4064" layer="21"/>
-<pad name="3" x="1.778" y="0" drill="0.762" diameter="1.1" shape="long" rot="R90"/>
-<pad name="2" x="0" y="0" drill="0.762" diameter="1.1" shape="long" rot="R90"/>
-<pad name="1" x="-1.778" y="0" drill="0.762" diameter="1.1" shape="long" rot="R90"/>
-<text x="3.175" y="0.635" size="0.4064" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="SOT23-3">
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
-<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<text x="-0.8255" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -2307,27 +2233,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 <pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-<symbol name="MCP9700">
-<wire x1="3.81" y1="-7.62" x2="-12.7" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="94"/>
-<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="-7.62" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-12.7" y1="7.62" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-9.906" y1="5.08" x2="-7.874" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-7.874" y1="5.08" x2="-7.874" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-7.874" y1="-2.54" x2="-9.906" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-9.906" y1="-2.54" x2="-9.906" y2="5.08" width="0.254" layer="94"/>
-<circle x="-8.89" y="-3.556" radius="1.27" width="2.54" layer="94"/>
-<circle x="-11.176" y="6.096" radius="0.5679" width="0.254" layer="94"/>
-<text x="-12.7" y="8.636" size="1.27" layer="96">&gt;VALUE</text>
-<text x="-12.7" y="10.668" size="1.27" layer="95">&gt;NAME</text>
-<rectangle x1="-9.906" y1="-2.032" x2="-7.874" y2="-0.254" layer="94"/>
-<pin name="GND" x="7.62" y="-5.08" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="OUT" x="7.62" y="0" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="VDD" x="7.62" y="5.08" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3102,33 +3007,6 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MCP9700" prefix="IC">
-<gates>
-<gate name="G$1" symbol="MCP9700" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="TO-92" package="TO92-STRAIGHT">
-<connects>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SOT-23" package="SOT23-3">
-<connects>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4970,14 +4848,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$7" library="freetronics-luke" deviceset="GND" device=""/>
 <part name="J4" library="freetronics-master-v1.1" deviceset="M04" device="PTH"/>
 <part name="U$8" library="freetronics-luke" deviceset="+3.3V" device="" value="+3V3"/>
-<part name="IC3" library="freetronics-master-v1" deviceset="MCP9700" device="SOT-23" value="MCP9701A">
-<attribute name="PACKAGE" value="3-SOT23"/>
-</part>
-<part name="J3" library="freetronics-luke" deviceset="SJ" device="" value="Temp"/>
 <part name="S1" library="freetronics" deviceset="TAC_SWITCH" device="SMD" value="Reset"/>
-<part name="U$6" library="freetronics-luke" deviceset="GND" device=""/>
-<part name="U$9" library="freetronics-luke" deviceset="+5V" device=""/>
-<part name="U$11" library="freetronics-luke" deviceset="+5V" device=""/>
 <part name="U$12" library="freetronics-luke" deviceset="+3.3V" device="" value="+3V3"/>
 <part name="R5" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="10k">
 <attribute name="PACKAGE" value="0603"/>
@@ -5210,22 +5081,10 @@ header for R3 compatibility.</text>
 <instance part="U$8" gate="G$1" x="43.18" y="175.26" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="40.64" y="175.26" size="1.27" layer="96" rot="MR0"/>
 </instance>
-<instance part="IC3" gate="G$1" x="88.9" y="20.32" smashed="yes">
-<attribute name="PACKAGE" x="76.2" y="30.48" size="1.27" layer="96"/>
-<attribute name="VALUE" x="76.2" y="33.02" size="1.27" layer="96"/>
-<attribute name="NAME" x="76.2" y="35.56" size="1.27" layer="95"/>
-</instance>
-<instance part="J3" gate="G$1" x="101.6" y="20.32" smashed="yes">
-<attribute name="NAME" x="101.6" y="15.24" size="1.27" layer="95"/>
-<attribute name="VALUE" x="101.6" y="12.7" size="1.27" layer="96"/>
-</instance>
 <instance part="S1" gate="S" x="218.44" y="101.6" smashed="yes">
 <attribute name="NAME" x="228.6" y="101.6" size="1.27" layer="95"/>
 <attribute name="VALUE" x="228.6" y="99.06" size="1.27" layer="96"/>
 </instance>
-<instance part="U$6" gate="G$1" x="99.06" y="10.16"/>
-<instance part="U$9" gate="G$1" x="99.06" y="30.48" rot="MR0"/>
-<instance part="U$11" gate="G$1" x="228.6" y="165.1"/>
 <instance part="U$12" gate="G$1" x="129.54" y="35.56" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="127" y="35.56" size="1.27" layer="96" rot="MR0"/>
 </instance>
@@ -5400,12 +5259,6 @@ header for R3 compatibility.</text>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="U$7" gate="G$1" pin="GND"/>
 <wire x1="63.5" y1="106.68" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="G$1" pin="GND"/>
-<wire x1="96.52" y1="15.24" x2="99.06" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="GND"/>
-<wire x1="99.06" y1="15.24" x2="99.06" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="P" pin="GND"/>
@@ -5780,11 +5633,6 @@ header for R3 compatibility.</text>
 <wire x1="223.52" y1="132.08" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
 <label x="210.82" y="132.334" size="1.27" layer="95"/>
 </segment>
-<segment>
-<pinref part="J3" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="20.32" x2="111.76" y2="20.32" width="0.1524" layer="91"/>
-<label x="106.68" y="20.574" size="1.27" layer="95"/>
-</segment>
 </net>
 <net name="N$48" class="0">
 <segment>
@@ -6036,10 +5884,6 @@ header for R3 compatibility.</text>
 </net>
 <net name="CC3000_EN_3V3" class="0">
 <segment>
-<pinref part="IC1" gate="E" pin="O"/>
-<wire x1="60.96" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="15.24" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="40.64" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="40.64" x2="172.72" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="40.64" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="63.5" x2="144.78" y2="63.5" width="0.1524" layer="91"/>
@@ -6051,7 +5895,6 @@ header for R3 compatibility.</text>
 <wire x1="129.54" y1="20.32" x2="129.54" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="17.78" x2="137.16" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="17.78" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
-<junction x="137.16" y="40.64"/>
 </segment>
 </net>
 <net name="MISO_TRISTATE" class="0">
@@ -6069,27 +5912,6 @@ header for R3 compatibility.</text>
 <pinref part="U$27" gate="G$1" pin="DO"/>
 <wire x1="30.48" y1="127" x2="38.1" y2="127" width="0.1016" layer="91"/>
 <label x="30.48" y="127" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="OUT"/>
-<wire x1="96.52" y1="20.32" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="+5V-2" class="0">
-<segment>
-<pinref part="J8" gate="G$1" pin="+5V@0"/>
-<pinref part="U$11" gate="G$1" pin="+5V"/>
-<wire x1="205.74" y1="160.02" x2="228.6" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="160.02" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="G$1" pin="VDD"/>
-<wire x1="96.52" y1="25.4" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="U$9" gate="G$1" pin="+5V"/>
-<wire x1="99.06" y1="25.4" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!CC3000_CS_5V" class="0">
@@ -6116,14 +5938,19 @@ header for R3 compatibility.</text>
 <label x="58.42" y="157.734" size="1.27" layer="95"/>
 </segment>
 </net>
+<net name="N$3" class="0">
+<segment>
+<wire x1="71.12" y1="15.24" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="E" pin="O"/>
+<wire x1="60.96" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="102,1,99.06,27.94,+5V,+5V-2,,,,"/>
 <approved hash="102,1,228.6,162.56,+5V,+5V-2,,,,"/>
 <approved hash="201,1,228.6,162.56,+5V,+5V\, +5V-2,,,,"/>
-<approved hash="201,1,99.06,27.94,+5V,+5V\, +5V-2,,,,"/>
 <approved hash="104,1,127,124.46,IC1P,VCC,+3V3,,,"/>
 <approved hash="104,1,205.74,127,J8,VIN,N$75,,,"/>
 <approved hash="104,1,205.74,116.84,J8,+3V3,N$77,,,"/>
