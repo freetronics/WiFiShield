@@ -3447,62 +3447,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="adafruit">
-<packages>
-<package name="RN-ANT">
-<wire x1="-4.3942" y1="-0.2032" x2="-4.3942" y2="2.159" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="4.3434" x2="-1.7526" y2="4.3434" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="4.3434" x2="-1.7526" y2="6.858" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="6.858" x2="-4.3942" y2="6.858" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="6.858" x2="-4.3942" y2="9.0678" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="9.0678" x2="-1.7526" y2="9.0678" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="9.0678" x2="-1.7526" y2="11.5824" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="11.5824" x2="-4.3942" y2="11.5824" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="11.5824" x2="-4.3942" y2="13.7922" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="13.7922" x2="-2.7432" y2="13.7922" width="0.508" layer="1"/>
-<wire x1="0" y1="2.159" x2="-4.3942" y2="2.159" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="2.159" x2="-4.3942" y2="4.3434" width="0.508" layer="1"/>
-<wire x1="-4.191" y1="0" x2="-1.27" y2="0" width="0.889" layer="1"/>
-<smd name="GND" x="-1.143" y="0" dx="2.54" dy="0.889" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="FEED" x="0" y="2.159" dx="0.0254" dy="0.0254" layer="1" stop="no" thermals="no" cream="no"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ANT">
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="2.54" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="2.54" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="0" width="0.254" layer="94"/>
-<pin name="FEED" x="0" y="0" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="GND" x="2.54" y="0" visible="pad" length="short" direction="pas" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ANTENNA" prefix="ANT">
-<gates>
-<gate name="G$1" symbol="ANT" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="RN-ANT">
-<connects>
-<connect gate="G$1" pin="FEED" pad="FEED"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="freetronics">
 <packages>
 <package name="TACTILE_SWITCH_SMD">
@@ -4299,7 +4243,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <rectangle x1="2.286" y1="-3.0988" x2="2.794" y2="-1.9558" layer="51"/>
 <rectangle x1="3.556" y1="-3.0988" x2="4.064" y2="-1.9558" layer="51"/>
 </package>
-<package name="ARDUINO-SHIELD_R3">
+<package name="ARDUINO-SHIELD_R3_NOHOLES">
 <wire x1="-33.02" y1="-26.67" x2="27.94" y2="-26.67" width="0" layer="20"/>
 <wire x1="30.48" y1="-24.13" x2="33.02" y2="-21.59" width="0" layer="20"/>
 <wire x1="33.02" y1="-21.59" x2="33.02" y2="11.176" width="0" layer="20"/>
@@ -4581,10 +4525,11 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="-5.9156" y="-22.6695" size="0.8128" layer="21" font="vector" ratio="15">IOR</text>
 <text x="-8.16985" y="-22.6695" size="0.8128" layer="21" font="vector" ratio="15">NC</text>
 <text x="6.58235" y="-22.63775" size="0.8128" layer="21" font="vector" ratio="15">GND</text>
-<hole x="30.48" y="8.89" drill="3.5"/>
-<hole x="-20.32" y="24.13" drill="3.5"/>
-<hole x="30.48" y="-19.05" drill="2.39999375"/>
-<hole x="-21.59" y="-24.13" drill="3.5"/>
+</package>
+<package name="2500AT44M0400">
+<smd name="P$1" x="-3.5" y="0" dx="1" dy="1" layer="1"/>
+<smd name="P$2" x="3.5" y="0" dx="1" dy="1" layer="1"/>
+<rectangle x1="-2.5" y1="-0.5" x2="-1.5" y2="0.5" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -4650,6 +4595,17 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pin name="VIN" x="17.78" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 <text x="-10.16" y="33.02" size="1.778" layer="94">Shield Footprint'</text>
 </symbol>
+<symbol name="ANTENNA">
+<pin name="P$1" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
+<pin name="P$2" x="0" y="-10.16" visible="off" length="middle" rot="R90"/>
+<wire x1="0" y1="-5.08" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<text x="-10.16" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MC74VHCT50A" prefix="IC">
@@ -4693,7 +4649,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <gate name="G$1" symbol="ARDUINO-SHIELD_R3" x="0" y="-5.08"/>
 </gates>
 <devices>
-<device name="" package="ARDUINO-SHIELD_R3">
+<device name="" package="ARDUINO-SHIELD_R3_NOHOLES">
 <connects>
 <connect gate="G$1" pin="!RESET" pad="!RESET"/>
 <connect gate="G$1" pin="!RESET@0" pad="!RESET@0"/>
@@ -4740,6 +4696,22 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
+<deviceset name="2500AT44M0400">
+<gates>
+<gate name="G$1" symbol="ANTENNA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2500AT44M0400">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -4756,16 +4728,10 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <parts>
 <part name="IC5" library="freetronics-luke" deviceset="CC3000" device="" value="CC3000MOD"/>
 <part name="U$13" library="freetronics-luke" deviceset="GND" device=""/>
-<part name="R7" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="0R">
-<attribute name="PACKAGE" value="0603"/>
-</part>
 <part name="C6" library="freetronics-master-v1" deviceset="CAP" device="0603" value="1uF">
 <attribute name="PACKAGE" value="0603"/>
 </part>
 <part name="+3V1" library="supply1" deviceset="+3V3" device="" value="+3V3"/>
-<part name="R6" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="0R">
-<attribute name="PACKAGE" value="0603"/>
-</part>
 <part name="U$14" library="freetronics-luke" deviceset="GND" device=""/>
 <part name="L2" library="freetronics-master-v1" deviceset="INDUCTOR" device="0402" value="NP">
 <attribute name="PACKAGE" value="0402"/>
@@ -4814,7 +4780,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="J9" library="freetronics-luke" deviceset="UFL" device="" value="U.FL-R-SMT-1(10)">
 <attribute name="NOTE" value="NP"/>
 </part>
-<part name="ANT1" library="adafruit" deviceset="ANTENNA" device=""/>
 <part name="U$2" library="freetronics-luke" deviceset="GND" device=""/>
 <part name="IC1" library="freetronics-angus" deviceset="MC74VHCT50A" device="" value="MC74VHCT50A">
 <attribute name="PACKAGE" value="16-SOIC"/>
@@ -4865,6 +4830,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </part>
 <part name="U$10" library="freetronics-luke" deviceset="GND" device=""/>
 <part name="U$27" library="freetronics-master-v1.1" deviceset="USD-SOCKET" device="NEW"/>
+<part name="ANT1" library="freetronics-angus" deviceset="2500AT44M0400" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4881,8 +4847,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="182.88" y="22.86" size="1.27" layer="98">1.8V logic levels on UART test port!</text>
 <text x="68.58" y="88.9" size="1.27" layer="98">1-2: Test Mode
 2-3: Normal Mode</text>
-<text x="205.74" y="50.8" size="1.27" layer="98">Meandered inverted-F
-antenna; 50Ω 2.4 GHz</text>
+<text x="198.12" y="83.82" size="1.27" layer="98">50Ω 2.4 GHz Feed</text>
 <text x="205.74" y="167.64" size="1.27" layer="98">SPI lines connected to 6-pin ISP
 header for R3 compatibility.</text>
 <wire x1="134.62" y1="152.4" x2="142.24" y2="152.4" width="0.1524" layer="98" style="dashdot"/>
@@ -4896,11 +4861,6 @@ header for R3 compatibility.</text>
 <instances>
 <instance part="IC5" gate="G$1" x="119.38" y="63.5"/>
 <instance part="U$13" gate="G$1" x="144.78" y="35.56"/>
-<instance part="R7" gate="G$1" x="160.02" y="68.58" smashed="yes" rot="R180">
-<attribute name="PACKAGE" x="172.72" y="68.58" size="1.27" layer="96"/>
-<attribute name="NAME" x="172.72" y="73.66" size="1.27" layer="95"/>
-<attribute name="VALUE" x="172.72" y="71.12" size="1.27" layer="96"/>
-</instance>
 <instance part="C6" gate="G$1" x="152.4" y="48.26" smashed="yes" rot="R180">
 <attribute name="NAME" x="157.48" y="50.8" size="1.27" layer="95"/>
 <attribute name="VALUE" x="157.48" y="48.26" size="1.27" layer="96"/>
@@ -4908,11 +4868,6 @@ header for R3 compatibility.</text>
 </instance>
 <instance part="+3V1" gate="G$1" x="152.4" y="83.82" smashed="yes">
 <attribute name="VALUE" x="144.78" y="83.82" size="1.27" layer="96"/>
-</instance>
-<instance part="R6" gate="G$1" x="160.02" y="76.2" smashed="yes" rot="R180">
-<attribute name="PACKAGE" x="157.48" y="81.28" size="1.27" layer="96"/>
-<attribute name="NAME" x="157.48" y="86.36" size="1.27" layer="95"/>
-<attribute name="VALUE" x="157.48" y="83.82" size="1.27" layer="96"/>
 </instance>
 <instance part="U$14" gate="G$1" x="152.4" y="35.56"/>
 <instance part="L2" gate="G$1" x="195.58" y="50.8" smashed="yes" rot="MR0">
@@ -4989,12 +4944,11 @@ header for R3 compatibility.</text>
 <attribute name="VALUE" x="187.96" y="83.82" size="1.27" layer="96"/>
 <attribute name="PACKAGE" x="187.96" y="81.28" size="1.27" layer="96"/>
 </instance>
-<instance part="J9" gate="G$1" x="208.28" y="78.74" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="213.36" y="78.74" size="1.27" layer="96"/>
-<attribute name="NAME" x="213.36" y="81.28" size="1.27" layer="95"/>
-<attribute name="NOTE" x="213.36" y="76.2" size="1.27" layer="96"/>
+<instance part="J9" gate="G$1" x="215.9" y="78.74" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="220.98" y="78.74" size="1.27" layer="96"/>
+<attribute name="NAME" x="220.98" y="81.28" size="1.27" layer="95"/>
+<attribute name="NOTE" x="220.98" y="76.2" size="1.27" layer="96"/>
 </instance>
-<instance part="ANT1" gate="G$1" x="208.28" y="60.96" rot="R270"/>
 <instance part="U$2" gate="G$1" x="40.64" y="104.14" rot="MR0"/>
 <instance part="IC1" gate="F" x="50.8" y="27.94" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.02" y="35.56" size="1.27" layer="95"/>
@@ -5120,6 +5074,10 @@ header for R3 compatibility.</text>
 </instance>
 <instance part="U$10" gate="G$1" x="22.86" y="160.02" rot="MR0"/>
 <instance part="U$27" gate="G$1" x="22.86" y="129.54" rot="MR0"/>
+<instance part="ANT1" gate="G$1" x="218.44" y="60.96" smashed="yes" rot="MR0">
+<attribute name="NAME" x="220.98" y="60.96" size="1.27" layer="95" rot="MR0" align="bottom-right"/>
+<attribute name="VALUE" x="220.98" y="58.42" size="1.27" layer="96" rot="MR0" align="bottom-right"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5184,13 +5142,9 @@ header for R3 compatibility.</text>
 </segment>
 <segment>
 <pinref part="U$22" gate="G$1" pin="GND"/>
-<wire x1="203.2" y1="58.42" x2="203.2" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="J9" gate="G$1" pin="GND"/>
-<wire x1="205.74" y1="76.2" x2="203.2" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="76.2" x2="203.2" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="ANT1" gate="G$1" pin="GND"/>
-<wire x1="208.28" y1="58.42" x2="203.2" y2="58.42" width="0.1524" layer="91"/>
-<junction x="203.2" y="58.42"/>
+<wire x1="213.36" y1="76.2" x2="203.2" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="76.2" x2="203.2" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
@@ -5331,40 +5285,6 @@ header for R3 compatibility.</text>
 <wire x1="40.64" y1="93.98" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="IC5" gate="G$1" pin="SDA_EEPROM"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="68.58" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="IC5" gate="G$1" pin="SDA_CC3000"/>
-<wire x1="142.24" y1="73.66" x2="167.64" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="73.66" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="68.58" x2="170.18" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="68.58" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="IC5" gate="G$1" pin="SCL_EEPROM"/>
-<wire x1="142.24" y1="71.12" x2="167.64" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="71.12" x2="170.18" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="76.2" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="76.2" x2="170.18" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="IC5" gate="G$1" pin="SCL_CC3000"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="76.2" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="WL_EN2" class="0">
 <segment>
 <pinref part="IC5" gate="G$1" pin="WL_EN2"/>
@@ -5392,7 +5312,7 @@ header for R3 compatibility.</text>
 <wire x1="195.58" y1="60.96" x2="193.04" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="60.96" x2="208.28" y2="60.96" width="0.1524" layer="91"/>
 <junction x="195.58" y="60.96"/>
-<pinref part="ANT1" gate="G$1" pin="FEED"/>
+<pinref part="ANT1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -5531,7 +5451,7 @@ header for R3 compatibility.</text>
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
 <pinref part="J9" gate="G$1" pin="SIG"/>
-<wire x1="205.74" y1="78.74" x2="198.12" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="78.74" x2="198.12" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK_3V3" class="0">
@@ -5941,16 +5861,32 @@ header for R3 compatibility.</text>
 <wire x1="60.96" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="IC5" gate="G$1" pin="SDA_EEPROM"/>
+<wire x1="142.24" y1="68.58" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="68.58" x2="149.86" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="G$1" pin="SDA_CC3000"/>
+<wire x1="149.86" y1="73.66" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="IC5" gate="G$1" pin="SCL_EEPROM"/>
+<wire x1="142.24" y1="71.12" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="71.12" x2="147.32" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="G$1" pin="SCL_CC3000"/>
+<wire x1="147.32" y1="76.2" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="102,1,228.6,162.56,+5V,+5V-2,,,,"/>
-<approved hash="201,1,228.6,162.56,+5V,+5V\, +5V-2,,,,"/>
 <approved hash="104,1,127,124.46,IC1P,VCC,+3V3,,,"/>
-<approved hash="104,1,205.74,127,J8,VIN,N$75,,,"/>
 <approved hash="104,1,205.74,116.84,J8,+3V3,N$77,,,"/>
 <approved hash="103,1,205.74,109.22,J8,RESERVED,N$74,,,"/>
+<approved hash="104,1,205.74,127,J8,VIN,N$75,,,"/>
 <approved hash="104,1,40.64,165.1,IC2P,VCC,+3V3,,,"/>
 <approved hash="113,1,231.623,119.109,J12,,,,,"/>
 <approved hash="113,1,231.623,144.509,J11,,,,,"/>
