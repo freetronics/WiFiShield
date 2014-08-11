@@ -2188,6 +2188,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="24.595" y1="24.75" x2="25.345" y2="24.75" width="0.254" layer="1"/>
 <wire x1="25.345" y1="24.75" x2="25.7805" y2="24.3145" width="0.254" layer="1"/>
 <wire x1="25.7805" y1="24.3145" x2="25.7805" y2="23.75" width="0.254" layer="1"/>
+<contactref element="IC1" pad="10"/>
+<wire x1="20.32" y1="32.639" x2="19.0246" y2="32.639" width="0.254" layer="1"/>
 </signal>
 <signal name="MOSI_5V">
 <wire x1="66.04" y1="27.94" x2="64.92875" y2="29.05125" width="0.2032" layer="16"/>
@@ -2607,9 +2609,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="36.141875" y1="13.59875" x2="37.69375" y2="13.59875" width="0.254" layer="1"/>
 <wire x1="37.69375" y1="13.59875" x2="39.095" y2="15" width="0.254" layer="1"/>
 <wire x1="39.095" y1="15" x2="39.095" y2="26.75" width="0.254" layer="1"/>
-</signal>
-<signal name="N$3">
-<contactref element="IC1" pad="10"/>
 </signal>
 <signal name="N$7">
 <via x="61.595" y="17.78" extent="1-16" drill="1.016"/>

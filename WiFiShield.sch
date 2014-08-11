@@ -5801,16 +5801,19 @@ header for R3 compatibility.</text>
 <net name="CC3000_EN_3V3" class="0">
 <segment>
 <wire x1="137.16" y1="40.64" x2="172.72" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="40.64" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="63.5" x2="144.78" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="63.5" x2="144.78" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="40.64" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="G$1" pin="VBAT_SW_EN"/>
-<wire x1="144.78" y1="66.04" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
-<label x="154.94" y="63.754" size="1.27" layer="95"/>
+<label x="154.94" y="66.294" size="1.27" layer="95"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="20.32" x2="129.54" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="17.78" x2="137.16" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="17.78" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="15.24" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="E" pin="O"/>
+<wire x1="60.96" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="40.64" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
+<junction x="137.16" y="40.64"/>
+<wire x1="142.24" y1="66.04" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO_TRISTATE" class="0">
@@ -5852,13 +5855,6 @@ header for R3 compatibility.</text>
 <pinref part="IC2" gate="A" pin="I"/>
 <wire x1="71.12" y1="157.48" x2="55.88" y2="157.48" width="0.1524" layer="91"/>
 <label x="58.42" y="157.734" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<wire x1="71.12" y1="15.24" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="E" pin="O"/>
-<wire x1="60.96" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
