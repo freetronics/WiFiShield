@@ -4838,7 +4838,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="119.38" y1="167.64" x2="119.38" y2="175.26" width="0.1524" layer="93"/>
 <wire x1="119.38" y1="175.26" x2="124.46" y2="175.26" width="0.1524" layer="93"/>
 <text x="147.32" y="12.7" size="3.048" layer="94">CC3000 Arduino-compatible WiFi Shield</text>
-<text x="147.32" y="6.858" size="1.778" layer="94">Version 0.5</text>
+<text x="147.32" y="6.858" size="1.778" layer="94">Version 0.1</text>
 <text x="169.926" y="9.398" size="1.778" layer="94">http://freetronics.com/wifishield</text>
 <frame x1="0" y1="0" x2="248.92" y2="185.42" columns="8" rows="5" layer="94"/>
 <frame x1="144.78" y1="5.08" x2="243.84" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
