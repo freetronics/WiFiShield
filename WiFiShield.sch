@@ -4814,7 +4814,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="R5" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="10k">
 <attribute name="PACKAGE" value="0603"/>
 </part>
-<part name="U$25" library="freetronics-luke" deviceset="+3.3V" device="" value="+3V3"/>
 <part name="R1" library="freetronics-master-v1" deviceset="RESISTOR" device="0603" value="10k">
 <attribute name="PACKAGE" value="0603"/>
 </part>
@@ -4831,6 +4830,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$10" library="freetronics-luke" deviceset="GND" device=""/>
 <part name="U$27" library="freetronics-master-v1.1" deviceset="USD-SOCKET" device="NEW"/>
 <part name="ANT1" library="freetronics-angus" deviceset="2500AT44M0400" device=""/>
+<part name="U$6" library="freetronics-luke" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5043,9 +5043,6 @@ header for R3 compatibility.</text>
 <attribute name="VALUE" x="121.92" y="25.4" size="1.27" layer="96"/>
 <attribute name="PACKAGE" x="121.92" y="22.86" size="1.27" layer="96"/>
 </instance>
-<instance part="U$25" gate="G$1" x="27.94" y="99.06" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="25.4" y="99.06" size="1.27" layer="96" rot="MR0"/>
-</instance>
 <instance part="R1" gate="G$1" x="27.94" y="88.9" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.32" y="91.44" size="1.27" layer="95"/>
 <attribute name="VALUE" x="20.32" y="88.9" size="1.27" layer="96"/>
@@ -5078,6 +5075,7 @@ header for R3 compatibility.</text>
 <attribute name="NAME" x="220.98" y="60.96" size="1.27" layer="95" rot="MR0" align="bottom-right"/>
 <attribute name="VALUE" x="220.98" y="58.42" size="1.27" layer="96" rot="MR0" align="bottom-right"/>
 </instance>
+<instance part="U$6" gate="G$1" x="27.94" y="78.74" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -5220,6 +5218,11 @@ header for R3 compatibility.</text>
 <wire x1="22.86" y1="170.18" x2="27.94" y2="170.18" width="0.1524" layer="91"/>
 <junction x="22.86" y="165.1"/>
 </segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="GND"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="81.28" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -5273,11 +5276,6 @@ header for R3 compatibility.</text>
 <pinref part="U$12" gate="G$1" pin="+3V3"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="30.48" x2="129.54" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$25" gate="G$1" pin="+3V3"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="93.98" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$26" gate="G$1" pin="+3V3"/>
@@ -5503,12 +5501,6 @@ header for R3 compatibility.</text>
 <pinref part="IC1" gate="D" pin="O"/>
 <wire x1="63.5" y1="40.64" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
 <label x="78.74" y="53.594" size="1.27" layer="95"/>
-</segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="83.82" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="78.74" x2="60.96" y2="78.74" width="0.1524" layer="91"/>
-<label x="43.18" y="78.994" size="1.27" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="A" pin="OE"/>
@@ -5796,6 +5788,12 @@ header for R3 compatibility.</text>
 <pinref part="IC1" gate="E" pin="I"/>
 <wire x1="40.64" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
 <label x="22.86" y="15.494" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="93.98" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="96.52" x2="12.7" y2="96.52" width="0.1524" layer="91"/>
+<label x="12.7" y="96.52" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="CC3000_EN_3V3" class="0">
