@@ -570,32 +570,6 @@ chip</description>
 </package>
 </packages>
 </library>
-<library name="SparkFun">
-<packages>
-<package name="SOT23-5">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="1.4224" y1="0.4294" x2="1.4224" y2="-0.4294" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.4294" x2="-1.4224" y2="0.4294" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1524" layer="51"/>
-<wire x1="-0.2684" y1="0.8104" x2="0.2684" y2="0.8104" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.8" x2="1.4" y2="-0.8" width="0.1524" layer="51"/>
-<wire x1="-1.4" y1="0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
-<smd name="1" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="5" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<text x="-0.889" y="2.159" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9525" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
-<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
-<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
-</package>
-</packages>
-</library>
 <library name="testpad">
 <description>&lt;b&gt;Test Pins/Pads&lt;/b&gt;&lt;p&gt;
 Cream on SMD OFF.&lt;br&gt;
@@ -1084,6 +1058,29 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <smd name="P$1" x="-3.5" y="0" dx="1" dy="1" layer="1"/>
 <smd name="P$2" x="3.5" y="0" dx="1" dy="1" layer="1"/>
 <rectangle x1="-2.5" y1="-0.5" x2="-1.5" y2="0.5" layer="21"/>
+<text x="-1.27" y="0" size="0.508" layer="25">&gt;NAME</text>
+</package>
+<package name="SOT23-5">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="1.4224" y1="0.4294" x2="1.4224" y2="-0.4294" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.4294" x2="-1.4224" y2="0.4294" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1524" layer="51"/>
+<wire x1="-0.2684" y1="0.8104" x2="0.2684" y2="0.8104" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.8" x2="1.4" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="-1.4" y1="0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+<smd name="1" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<text x="-0.889" y="2.159" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9525" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -1247,27 +1244,27 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="IC5" library="freetronics-luke" package="CC3000" value="CC3000MOD" x="28.891875" y="15.39875" smashed="yes" rot="R90">
-<attribute name="NAME" x="37.385" y="9.2075" size="0.889" layer="25" ratio="15"/>
+<attribute name="NAME" x="28.368" y="10.7315" size="0.889" layer="25" ratio="15"/>
 <attribute name="VALUE" x="22.3434375" y="7.5009375" size="0.889" layer="27" ratio="15"/>
 </element>
 <element name="C6" library="freetronics-master-v1" package="0603" value="1uF" x="28.7825" y="24.5" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="0603" x="34.4975" y="35.93" size="0.8128" layer="27" ratio="15" rot="R270" display="off"/>
-<attribute name="NAME" x="28.09035" y="23.823725" size="0.889" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="30.659275" y="24.15335" size="0.889" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="29.2444625" y="23.442725" size="0.889" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="L2" library="freetronics-master-v1" package="C0402" value="NP" x="7.83675" y="8.942040625" smashed="yes" rot="R135">
 <attribute name="PACKAGE" value="0402" x="10.530825" y="11.63611875" size="0.8128" layer="27" ratio="15" rot="R135" display="off"/>
-<attribute name="NAME" x="9.173684375" y="10.76615625" size="0.889" layer="25" ratio="15" rot="R225"/>
+<attribute name="NAME" x="6.506684375" y="11.52815625" size="0.889" layer="25" ratio="15" rot="R225"/>
 <attribute name="VALUE" x="9.08949375" y="10.79421875" size="0.889" layer="27" ratio="15" rot="R225"/>
 </element>
 <element name="C8" library="freetronics-master-v1" package="C0402" value="2.2pF" x="10.01951875" y="10.2478125" smashed="yes" rot="R45">
 <attribute name="PACKAGE" value="0402" x="10.468534375" y="-4.569609375" size="0.8128" layer="27" ratio="15" rot="R45" display="off"/>
-<attribute name="NAME" x="9.033309375" y="10.392125" size="0.889" layer="25" ratio="15" rot="R45"/>
+<attribute name="NAME" x="10.684309375" y="8.741125" size="0.889" layer="25" ratio="15" rot="R45"/>
 <attribute name="VALUE" x="9.6226375" y="11.005521875" size="0.889" layer="27" ratio="15" rot="R135"/>
 </element>
 <element name="L1" library="freetronics-master-v1" package="C0402" value="2.2nH" x="11.24" y="12.473959375" smashed="yes" rot="R135">
 <attribute name="PACKAGE" value="0402" x="32.7926125" y="10.677909375" size="0.8128" layer="27" ratio="15" rot="R135" display="off"/>
-<attribute name="NAME" x="10.117465625" y="14.532684375" size="0.889" layer="25" ratio="15" rot="R225"/>
+<attribute name="NAME" x="10.117465625" y="14.913684375" size="0.889" layer="25" ratio="15" rot="R225"/>
 <attribute name="VALUE" x="11.931478125" y="11.355021875" size="0.889" layer="27" ratio="15" rot="R315"/>
 </element>
 <element name="C7" library="freetronics-master-v1" package="C0402" value="10pF" x="15.14475" y="12.446" smashed="yes">
@@ -1275,46 +1272,41 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="14.50975" y="13.2454" size="0.889" layer="25" ratio="15"/>
 <attribute name="VALUE" x="15.28083125" y="13.10366875" size="0.889" layer="27" ratio="15" rot="R90"/>
 </element>
-<element name="C4" library="freetronics-master-v1" package="0603" value="10nF" x="28.7825" y="28.25" smashed="yes" rot="R270">
-<attribute name="PACKAGE" value="0603" x="33.8625" y="28.25" size="0.8128" layer="27" ratio="15" rot="R270" display="off"/>
-<attribute name="NAME" x="28.131625" y="29.789875" size="0.889" layer="25" font="vector" ratio="15"/>
-<attribute name="VALUE" x="29.1127" y="29.774" size="0.889" layer="27" font="vector" ratio="15" rot="R90"/>
-</element>
 <element name="C5" library="freetronics-master-v1" package="0603" value="1uF" x="36.035" y="24.5" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="0603" x="33.495" y="21.325" size="0.8128" layer="27" ratio="15" rot="R90" display="off"/>
 <attribute name="NAME" x="36.685875" y="23.0395" size="0.889" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="34.4475" y="25.77" size="0.889" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="IC4" library="SparkFun" package="SOT23-5" value="SPX3819M5-L-3-3" x="32.0943" y="24.765" smashed="yes" rot="R90">
+<element name="IC4" library="freetronics-angus" package="SOT23-5" value="AP2112K-3.3" x="32.0943" y="24.765" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="5-SOT23" x="32.0943" y="20.955" size="0.8128" layer="27" ratio="15" rot="R90" display="off"/>
-<attribute name="NAME" x="34.36125" y="24.49195" size="0.889" layer="25" ratio="15"/>
+<attribute name="NAME" x="31.69425" y="24.23795" size="0.889" layer="25" ratio="15"/>
 <attribute name="VALUE" x="35.189925" y="22.2646875" size="0.889" layer="27" ratio="15" rot="R90"/>
 </element>
 <element name="C3" library="freetronics-master-v1" package="0603" value="100nF" x="30.48635" y="28.25" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="0603" x="30.48635" y="28.25" size="0.8128" layer="27" ratio="15" rot="R270" display="off"/>
-<attribute name="NAME" x="29.835475" y="29.8295625" size="0.889" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="28.438475" y="27.6705625" size="0.889" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="30.8102" y="29.859725" size="0.889" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="J2" library="freetronics-master-v1" package="SJ_2" value="Mode" x="23.891875" y="2.82575" smashed="yes">
-<attribute name="NAME" x="19.84375" y="2.3495" size="0.889" layer="25" ratio="15"/>
+<attribute name="NAME" x="23.14575" y="2.3495" size="0.889" layer="25" ratio="15"/>
 </element>
 <element name="TP2" library="testpad" package="TP06R" value="R2" x="17.78" y="4.064" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="17.78" y="2.159" size="1" layer="37"/>
-<attribute name="NAME" x="14.94" y="3.5116" size="0.889" layer="25" ratio="15"/>
+<attribute name="NAME" x="13.035" y="3.7656" size="0.889" layer="25" ratio="15"/>
 <attribute name="VALUE" x="15.621" y="3.683" size="0.889" layer="27" ratio="15"/>
 </element>
 <element name="TP1" library="testpad" package="TP06R" value="R1" x="17.78" y="5.334" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="17.78" y="3.429" size="1" layer="37"/>
-<attribute name="NAME" x="14.94" y="4.7816" size="0.889" layer="25" ratio="15"/>
+<attribute name="NAME" x="13.035" y="5.0356" size="0.889" layer="25" ratio="15"/>
 <attribute name="VALUE" x="15.621" y="4.953" size="0.889" layer="27" ratio="15"/>
 </element>
 <element name="J10" library="freetronics-master-v1" package="1X03" value="Test" x="20.32" y="6.35" smashed="yes">
-<attribute name="NAME" x="17.0688" y="4.6863" size="0.889" layer="25" ratio="15"/>
+<attribute name="NAME" x="19.1008" y="7.9883" size="0.889" layer="25" ratio="15"/>
 <attribute name="VALUE" x="18.7325" y="4.445" size="0.889" layer="27" ratio="15"/>
 </element>
 <element name="C9" library="freetronics-master-v1" package="C0402" value="NP" x="17.9705" y="13.081" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="0402" x="17.9705" y="13.081" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="18.54073125" y="15.24126875" size="0.889" layer="25" ratio="15" rot="R180"/>
+<attribute name="NAME" x="20.19173125" y="13.33626875" size="0.889" layer="25" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="18.447003125" y="11.718540625" size="0.889" layer="27" ratio="15" rot="R180"/>
 </element>
 <element name="J9" library="freetronics-luke" package="UFL" value="U.FL-R-SMT-1(10)" x="10.564" y="17.3025" smashed="yes" rot="R180">
@@ -1325,20 +1317,20 @@ Please make sure your boards conform to these design rules.</description>
 <element name="IC1" library="freetronics-angus" package="SO14" value="MC74VHCT50A" x="22.098" y="31.369" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="16-SOIC" x="22.098" y="31.369" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="18.669" y="36.449" size="0.889" layer="27" ratio="15"/>
-<attribute name="NAME" x="21.17725" y="35.08375" size="0.889" layer="25" ratio="15"/>
+<attribute name="NAME" x="21.17725" y="34.32175" size="0.889" layer="25" ratio="15"/>
 </element>
 <element name="C2" library="freetronics-master-v1" package="0603" value="100nF" x="7.3025" y="43.4975" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="0603" x="7.3025" y="43.4975" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="8.001" y="43.21175" size="0.889" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="6.731" y="41.30675" size="0.889" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="8.9027" y="41.529" size="0.889" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="J8" library="freetronics-angus" package="ARDUINO-SHIELD_R3_NOHOLES" value="ARDUINO-SHIELD_R3" x="35.56" y="26.67" smashed="yes"/>
 <element name="J12" library="freetronics-master-v1" package="1X08" value="" x="45.72" y="6.35" smashed="yes" rot="R180">
-<attribute name="NAME" x="44.53255" y="5.9563" size="0.889" layer="25" ratio="15"/>
+<attribute name="NAME" x="44.65955" y="7.9883" size="0.889" layer="25" ratio="15"/>
 <attribute name="VALUE" x="46.99" y="9.525" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="J11" library="freetronics-master-v1" package="1X06" value="" x="50.8" y="6.35" smashed="yes">
-<attribute name="NAME" x="49.7713" y="5.9563" size="0.889" layer="25" ratio="15"/>
+<attribute name="NAME" x="49.8983" y="8.1153" size="0.889" layer="25" ratio="15"/>
 <attribute name="VALUE" x="49.53" y="3.175" size="1.27" layer="27"/>
 </element>
 <element name="J6" library="freetronics-master-v1" package="1X08" value="" x="63.5" y="46.99" smashed="yes" rot="R180">
@@ -1346,26 +1338,26 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="64.77" y="50.165" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="J7" library="freetronics-master-v1" package="1X08" value="" x="41.656" y="46.99" smashed="yes" rot="R180">
-<attribute name="NAME" x="40.97655" y="46.5963" size="0.889" layer="25" ratio="15"/>
+<attribute name="NAME" x="41.35755" y="44.4373" size="0.889" layer="25" ratio="15"/>
 <attribute name="VALUE" x="42.926" y="50.165" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="J5" library="freetronics-master-v1" package="1X02" value="" x="21.336" y="46.99" smashed="yes" rot="R180">
-<attribute name="NAME" x="17.9578" y="44.3738" size="0.889" layer="25" ratio="15"/>
+<attribute name="NAME" x="20.6248" y="44.5008" size="0.889" layer="25" ratio="15"/>
 <attribute name="VALUE" x="22.606" y="50.165" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R4" library="freetronics-master-v1" package="0603" value="1k" x="5.23875" y="43.4975" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="0603" x="5.23875" y="43.4975" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="4.66725" y="44.958" size="0.889" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="4.54025" y="41.275" size="0.889" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="4.4577" y="42.32275" size="0.889" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="LED1" library="freetronics-master-v1" package="LED-0603" value="Power" x="1.905" y="43.4975" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="0603" x="1.905" y="43.4975" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="COLOUR" value="Green" x="1.905" y="43.4975" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="1.50495" y="41.9735" size="0.889" layer="25" ratio="15" rot="R90"/>
+<attribute name="NAME" x="0.90805" y="44.6405" size="0.889" layer="25" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="2.2352" y="45.0215" size="0.889" layer="27" ratio="15" rot="R90"/>
 </element>
 <element name="J4" library="freetronics-master-v1.1" package="1X04" value="" x="55.88" y="43.815" smashed="yes" rot="R180">
-<attribute name="NAME" x="55.1688" y="43.4213" size="0.889" layer="25" ratio="15"/>
+<attribute name="NAME" x="57.5818" y="43.5483" size="0.889" layer="25" ratio="15"/>
 <attribute name="VALUE" x="57.15" y="46.99" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="S1" library="freetronics" package="TACTILE_SWITCH_SMD" value="Reset" x="10.63625" y="23.65375" smashed="yes">
@@ -1374,12 +1366,12 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="R5" library="freetronics-master-v1" package="0603" value="10k" x="26.5425" y="23.75" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="0603" x="26.5425" y="23.75" size="0.8128" layer="27" ratio="15" rot="R180" display="off"/>
-<attribute name="NAME" x="25.9075" y="24.385" size="0.8128" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="23.4945" y="23.496" size="0.8128" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="25.59" y="24.385" size="0.8128" layer="27" font="vector" ratio="15"/>
 </element>
 <element name="R1" library="freetronics-master-v1" package="0603" value="10k" x="15.9385" y="45.466" smashed="yes" rot="R90">
 <attribute name="PACKAGE" value="0603" x="15.9385" y="45.466" size="0.8128" layer="27" ratio="15" rot="R90" display="off"/>
-<attribute name="NAME" x="17.36725" y="44.831" size="0.8128" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="16.637" y="47.72025" size="0.8128" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="17.36725" y="44.35475" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="R2" library="freetronics-master-v1" package="0603" value="10k" x="16.1925" y="24.765" smashed="yes" rot="R90">
@@ -1389,15 +1381,15 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="IC2" library="74xx-little-de" package="SOT23-5" value="74AHC1G125" x="24.13" y="39.37" smashed="yes" rot="R270">
 <attribute name="PACKAGE" value="SOT-25" x="24.13" y="39.37" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="20.16125" y="39.0525" size="0.8128" layer="25" ratio="15"/>
+<attribute name="NAME" x="23.20925" y="39.6875" size="0.8128" layer="25" ratio="15"/>
 <attribute name="VALUE" x="20.47875" y="41.275" size="0.8128" layer="27" ratio="15"/>
 </element>
 <element name="C1" library="freetronics-master-v1" package="0603" value="100nF" x="27.94" y="40.3225" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="0603" x="27.94" y="40.3225" size="0.8128" layer="27" ratio="15" rot="R180" display="off"/>
-<attribute name="NAME" x="29.5275" y="39.84625" size="0.8128" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="29.2735" y="39.97325" size="0.8128" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="29.5275" y="40.005" size="0.8128" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="U$27" library="freetronics-master-v1.1" package="MICRO-SD-SOCKET-PP" value="USD-SOCKETNEW" x="15.90675" y="40.941625" rot="R90"/>
+<element name="SD1" library="freetronics-master-v1.1" package="MICRO-SD-SOCKET-PP" value="USD-SOCKETNEW" x="15.90675" y="40.941625" rot="R90"/>
 <element name="ANT1" library="freetronics-angus" package="2500AT44M0400" value="2500AT44M0400" x="4.353" y="4.54" rot="R225"/>
 </elements>
 <signals>
@@ -1430,7 +1422,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C6" pad="1"/>
 <contactref element="L2" pad="2"/>
 <contactref element="L1" pad="2"/>
-<contactref element="C4" pad="1"/>
 <contactref element="C5" pad="2"/>
 <contactref element="IC4" pad="2"/>
 <contactref element="C3" pad="1"/>
@@ -1458,9 +1449,9 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="S1" pad="1"/>
 <contactref element="IC2" pad="3"/>
 <contactref element="C1" pad="1"/>
-<contactref element="U$27" pad="GND1"/>
-<contactref element="U$27" pad="GND2"/>
-<contactref element="U$27" pad="6"/>
+<contactref element="SD1" pad="GND1"/>
+<contactref element="SD1" pad="GND2"/>
+<contactref element="SD1" pad="6"/>
 <via x="30.099" y="40.259" extent="1-16" drill="0.3302"/>
 <via x="23.241" y="35.179" extent="1-16" drill="0.3302"/>
 <via x="30.48" y="33.782" extent="1-16" drill="0.3302"/>
@@ -1566,6 +1557,12 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R1" pad="2"/>
 <via x="30.753" y="22.623" extent="1-16" drill="0.3302"/>
 <via x="28.086" y="22.623" extent="1-16" drill="0.3302"/>
+<via x="32.023" y="24.782" extent="1-16" drill="0.3302"/>
+<via x="29.991" y="24.782" extent="1-16" drill="0.3302"/>
+<via x="29.102" y="29.989" extent="1-16" drill="0.3302"/>
+<via x="34.436" y="29.989" extent="1-16" drill="0.3302"/>
+<via x="29.102" y="26.941" extent="1-16" drill="0.3302"/>
+<via x="21.609" y="23.766" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="3V3">
 </signal>
@@ -1585,7 +1582,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="IC2" pad="5"/>
 <wire x1="27.178" y1="40.3225" x2="25.4325" y2="40.3225" width="0.3048" layer="1"/>
 <wire x1="25.4325" y1="40.3225" x2="25.43" y2="40.32" width="0.2032" layer="1"/>
-<contactref element="U$27" pad="4"/>
+<contactref element="SD1" pad="4"/>
 <wire x1="16.1925" y1="24.003" x2="15.748" y2="24.003" width="0.254" layer="1"/>
 <wire x1="15.748" y1="24.003" x2="14.859" y2="24.892" width="0.254" layer="1"/>
 <wire x1="14.859" y1="24.892" x2="14.859" y2="25.654" width="0.254" layer="1"/>
@@ -1627,10 +1624,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="27.1145" y1="40.3225" x2="27.178" y2="40.386" width="0.254" layer="1"/>
 <wire x1="27.178" y1="40.386" x2="27.178" y2="39.497" width="0.254" layer="1"/>
 <wire x1="27.178" y1="39.497" x2="28.067" y2="38.608" width="0.254" layer="1"/>
-<wire x1="28.067" y1="38.608" x2="28.067" y2="29.972" width="0.254" layer="1"/>
-<wire x1="28.067" y1="29.972" x2="27.432" y2="29.337" width="0.254" layer="1"/>
-<wire x1="27.432" y1="29.337" x2="27.432" y2="26.337" width="0.254" layer="1"/>
-<wire x1="27.432" y1="26.337" x2="26.595" y2="25.5" width="0.254" layer="1"/>
+<wire x1="28.067" y1="38.608" x2="28.067" y2="30.099" width="0.254" layer="1"/>
+<wire x1="28.067" y1="30.099" x2="28.067" y2="29.972" width="0.254" layer="1"/>
+<wire x1="28.067" y1="26.972" x2="26.595" y2="25.5" width="0.254" layer="1"/>
+<wire x1="28.067" y1="26.972" x2="28.067" y2="29.972" width="0.254" layer="1"/>
 </signal>
 <signal name="WL_EN2">
 <contactref element="IC5" pad="5"/>
@@ -1778,15 +1775,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="11.938" y1="39.624" x2="11.938" y2="32.639" width="0.254" layer="1"/>
 <wire x1="55.88" y1="46.83125" x2="55.88" y2="43.815" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$43">
-<contactref element="C4" pad="2"/>
-<contactref element="IC4" pad="4"/>
-<wire x1="28.7825" y1="27.488" x2="28.7825" y2="26.5625" width="0.254" layer="1"/>
-<wire x1="28.7825" y1="26.5625" x2="29.095" y2="26.25" width="0.254" layer="1"/>
-<wire x1="29.095" y1="26.25" x2="29.595" y2="26.25" width="0.254" layer="1"/>
-<wire x1="29.595" y1="26.25" x2="30.13" y2="25.715" width="0.254" layer="1"/>
-<wire x1="30.13" y1="25.715" x2="30.7942" y2="25.715" width="0.254" layer="1"/>
-</signal>
 <signal name="N$13">
 </signal>
 <signal name="N$22">
@@ -1869,7 +1857,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="SCK_3V3">
 <contactref element="IC5" pad="17"/>
 <contactref element="IC1" pad="6"/>
-<contactref element="U$27" pad="5"/>
+<contactref element="SD1" pad="5"/>
 <via x="22.987" y="33.909" extent="1-16" drill="0.3302"/>
 <wire x1="19.177" y1="33.909" x2="22.987" y2="33.909" width="0.254" layer="16"/>
 <wire x1="22.987" y1="33.909" x2="25.1714" y2="33.909" width="0.254" layer="1"/>
@@ -1895,7 +1883,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="IC5" pad="15"/>
 <contactref element="IC1" pad="4"/>
 <wire x1="32.7025" y1="31.115" x2="32.7025" y2="28.5115" width="0.254" layer="1"/>
-<contactref element="U$27" pad="3"/>
+<contactref element="SD1" pad="3"/>
 <via x="23.114" y="31.369" extent="1-16" drill="0.3302"/>
 <wire x1="20.193" y1="31.369" x2="23.114" y2="31.369" width="0.254" layer="16"/>
 <wire x1="23.114" y1="31.369" x2="25.1714" y2="31.369" width="0.254" layer="1"/>
@@ -1988,7 +1976,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="!SD_CS_3V3">
 <contactref element="IC1" pad="2"/>
 <contactref element="R2" pad="2"/>
-<contactref element="U$27" pad="2"/>
+<contactref element="SD1" pad="2"/>
 <wire x1="6.731" y1="33.02" x2="5.688375" y2="33.02" width="0.3048" layer="1"/>
 <wire x1="5.688375" y1="33.02" x2="5.60675" y2="33.101625" width="0.3048" layer="1"/>
 <via x="23.114" y="28.829" extent="1-16" drill="0.3302"/>
@@ -2241,7 +2229,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="51.435" y1="40.64" x2="43.18" y2="40.64" width="0.2032" layer="1"/>
 <wire x1="43.18" y1="40.64" x2="41.91" y2="41.91" width="0.2032" layer="1"/>
 <contactref element="IC2" pad="4"/>
-<contactref element="U$27" pad="7"/>
+<contactref element="SD1" pad="7"/>
 <wire x1="5.20675" y1="38.601625" x2="4.699" y2="38.601625" width="0.254" layer="1"/>
 <wire x1="41.91" y1="41.91" x2="24.765" y2="41.91" width="0.254" layer="1"/>
 <wire x1="24.765" y1="41.91" x2="24.257" y2="41.402" width="0.254" layer="1"/>
