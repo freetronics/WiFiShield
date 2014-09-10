@@ -5879,6 +5879,7 @@ header for R3 compatibility.</text>
 </sheet>
 </sheets>
 <errors>
+<approved hash="101,1,218.44,50.8,ANT1,P$2,,,,"/>
 <approved hash="104,1,127,124.46,IC1P,VCC,+3V3,,,"/>
 <approved hash="104,1,205.74,116.84,J8,+3V3,N$77,,,"/>
 <approved hash="103,1,205.74,109.22,J8,RESERVED,N$74,,,"/>
